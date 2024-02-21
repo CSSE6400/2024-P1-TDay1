@@ -28,9 +28,3 @@ async fn health_check() -> impl IntoResponse {
 
    (StatusCode::OK, Json(resp))
 }
-
-// basic handler that responds with a static string
-#[derive(Serialize)]
-struct HealthCheckResponse {
-    status: String
-}
